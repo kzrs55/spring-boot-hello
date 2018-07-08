@@ -1,5 +1,8 @@
+com/kfit/dao/DemoRepository.class
+com/kfit/test/web/HelloController.class
+com/kfit/test/service/DemoService.class
+com/kfit/test/bean/Demo.class
+com/kfit/test/web/Demo2Controller.class
 com/kfit/App.class
 com/kfit/base/exception/GlobalDefaultExceptionHandler.class
-com/kfit/test/web/HelloController.class
 com/kfit/test/web/DemoController.class
-com/kfit/test/bean/Demo.class

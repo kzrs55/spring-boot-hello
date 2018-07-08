@@ -1,12 +1,13 @@
 package com.kfit.test.bean;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
  * Created by zjutK on 2018/7/7.
  */
-
+@Entity
 public class Demo {
     @Id
     @GeneratedValue

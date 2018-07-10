@@ -24,4 +24,9 @@ public class Demo2Controller {
         demoService.save(d);
         return "ok.demo2controller.save";
     }
+
+    @RequestMapping("/getById")
+    public Demo getById(long id){
+        return demoService.getById(id);
+    }
 }

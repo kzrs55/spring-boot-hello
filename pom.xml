@@ -51,7 +51,7 @@
                             <goal>repackage</goal>
                         </goals>
                         <configuration>
-                            <classifer>exec</classifer>
+                            <classifier>exec</classifier>
                         </configuration>
                     </execution>
                 </executions>

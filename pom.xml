@@ -31,6 +31,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.18</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -51,7 +56,7 @@
                             <goal>repackage</goal>
                         </goals>
                         <configuration>
-                            <classifer>exec</classifer>
+                            <classifier>exec</classifier>
                         </configuration>
                     </execution>
                 </executions>

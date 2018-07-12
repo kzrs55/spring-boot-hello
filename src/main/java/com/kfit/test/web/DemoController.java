@@ -1,7 +1,6 @@
 package com.kfit.test.web;
 
 
-import com.alibaba.fastjson.JSONPObject;
 import com.kfit.test.bean.Demo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

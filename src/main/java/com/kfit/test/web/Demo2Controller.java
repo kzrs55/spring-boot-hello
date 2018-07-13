@@ -17,13 +17,14 @@ public class Demo2Controller {
     @Resource
     private DemoService demoService;
 
-    @RequestMapping("save")
+    @RequestMapping("/save")
     public String save(){
         Demo d = new Demo();
         d.setName("Angel");
         demoService.save(d);
         return "ok.demo2controller.save";
     }
+
 
     @RequestMapping("/getById")
     public Demo getById(long id){

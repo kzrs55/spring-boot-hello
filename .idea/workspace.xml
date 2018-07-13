@@ -152,8 +152,12 @@
       <file leaf-file-name="WebFilter.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.0.32/tomcat-embed-core-8.0.32.jar!/javax/servlet/annotation/WebFilter.class">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="322">
               <caret line="22" column="29" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="29" />
+=======
+            <state relative-caret-position="274">
+>>>>>>> 925fd684870504705e44bbdfd12476213fce7987
             </state>
           </provider>
         </entry>
@@ -186,7 +190,11 @@
         <option value="$PROJECT_DIR$/src/main/java/org/springboot/sample/config/MyWebAppConfigurer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kfit/base/scheduling/SchedulingConfig.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/main/java/com/kfit/base/servlet/DruidStatViewServlet.java" />
+=======
+        <option value="$PROJECT_DIR$/src/main/java/com/kfit/dao/DemoRepository.java" />
+>>>>>>> 925fd684870504705e44bbdfd12476213fce7987
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/kfit/base/servlet/DruidConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kfit/base/util/SpringUtil.java" />
@@ -716,6 +724,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/App.java">
+>>>>>>> 12b1601be455bcc5fb8589ef05effc3761616d06
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
@@ -892,6 +901,8 @@
           <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
           </folding>
         </state>
       </provider>

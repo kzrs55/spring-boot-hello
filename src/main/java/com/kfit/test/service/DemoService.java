@@ -24,10 +24,14 @@ public class DemoService {
     public void save(Demo demo){
         demoRepository.save(demo);
     }
+//    public Demo getById(long id){
+//        //demoRepository.findOne(id);//在demoRepository可以直接使用findOne进行获取.
+//        return demoDao.getById(id);
+//    }
+
 
     public Demo getById(long id){
         return demoDao.getById(id);
 
     }
-
 }

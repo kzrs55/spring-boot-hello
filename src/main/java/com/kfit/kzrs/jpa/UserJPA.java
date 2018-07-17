@@ -10,7 +10,7 @@ import java.io.Serializable;
  * Created by zjutK on 2018/7/15.
  */
 public interface UserJPA extends
-        JpaRepository<UserJPA, Long>,
+        JpaRepository<UserEntity, Long>,
         JpaSpecificationExecutor<UserEntity>,
         Serializable {
 }

@@ -4,7 +4,17 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456
-
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat,wall,log4j
+    max-active: 20
+#    初始化数量
+    initial-size: 1
+    max-wait: 60000
+#    打开PScache，并且指定每个连接PSCache的大小
+    pool-prepared-statements: true
+    max-open-prepared-statements: 20
+    connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMills = 5000
+#    通过connectionPropertites属性来打开merge功能；慢sql记录
   jpa:
     database: MYSQL
     show-sql: true

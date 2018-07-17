@@ -1,4 +1,4 @@
-package com.kfit.kzrs.web;
+package com.kfit.kzrs.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

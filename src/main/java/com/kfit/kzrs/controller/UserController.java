@@ -1,4 +1,4 @@
-package com.kfit.kzrs.web;
+package com.kfit.kzrs.controller;
 
 import com.kfit.kzrs.entity.UserEntity;
 import com.kfit.kzrs.jpa.UserJPA;

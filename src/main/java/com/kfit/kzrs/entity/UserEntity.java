@@ -23,6 +23,9 @@ public class UserEntity implements Serializable{
     @Column(name = "t_address")
     private String address;
 
+    @Column(name = "t_pwd")
+    private String password;
+
     public UserEntity() {
     }
 
@@ -56,5 +59,13 @@ public class UserEntity implements Serializable{
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

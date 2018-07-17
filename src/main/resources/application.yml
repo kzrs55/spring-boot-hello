@@ -20,3 +20,7 @@ spring:
     show-sql: true
     hibernate:
       naming-strategy: org.hibernate.cfg.DefaultComponentSafeNamingStrategy
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp
+      suffix: .jsp

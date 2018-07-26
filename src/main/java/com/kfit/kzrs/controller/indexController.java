@@ -20,4 +20,9 @@ public class indexController {
         return "login";
     }
 
+    @RequestMapping(value = "/upload",method = RequestMethod.GET)
+    public String upload(){
+        return "upload";
+    }
+
 }

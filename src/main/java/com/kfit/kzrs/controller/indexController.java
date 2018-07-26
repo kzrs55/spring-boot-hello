@@ -1,5 +1,7 @@
 package com.kfit.kzrs.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -10,8 +12,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/user")
 public class indexController {
+    private final static Logger logger = LoggerFactory.getLogger(indexController.class);
     @RequestMapping(value = "/index",method = RequestMethod.GET)
     public String index(){
+        logger.debug("记录debug日志");
+        logger.error("记录error日志");
+        logger.info("访问了index方法");
         return "index";
     }
 

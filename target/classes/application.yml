@@ -29,3 +29,9 @@ multipart:
   enabled: true
   max-file-size: 50mb
   max-request-size: 50mb
+logging:
+  level:com.kift.kzrs.controller: 'off'  #双引号才能生效
+
+
+
+

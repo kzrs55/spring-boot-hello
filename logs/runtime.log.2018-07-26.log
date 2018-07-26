@@ -1,0 +1,775 @@
+2018-07-26 22:04:43.623 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99153 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:04:43.626 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:04:43.671 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Jul 26 22:04:43 CST 2018]; root of context hierarchy
+2018-07-26 22:04:48.744 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a7c20fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:04:49.275 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:04:49.296 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:04:49.299 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:04:50.068 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:04:50.073 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:04:50.074 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6403 ms
+2018-07-26 22:04:50.568 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:04:50.571 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:04:50.572 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:04:50.572 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:04:50.587 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:04:50.588 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:04:50.589 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:04:51.838 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:04:52.617 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:04:52.632 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:04:52.731 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:04:52.734 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:04:52.735 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:04:53.138 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:04:53.213 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:04:53.412 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:04:54.118 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:04:54.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Jul 26 22:04:43 CST 2018]; root of context hierarchy
+2018-07-26 22:04:54.397 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:04:54.484 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:04:54.486 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:04:54.486 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:04:54.488 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:04:54.488 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:04:54.489 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:04:54.492 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:04:54.493 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:04:54.493 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:04:54.494 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:04:54.494 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:04:54.496 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:04:54.496 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:04:54.496 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:04:54.504 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:04:54.504 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:04:54.533 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:04:54.533 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:04:54.533 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:04:54.554 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:04:54.555 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:04:55.184 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:04:55.185 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:04:55.191 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:04:55.239 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:04:55.249 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:04:55.283 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:04:55.322 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:04:55.330 [main] INFO  com.App - Started App in 27.201 seconds (JVM running for 33.017)
+2018-07-26 22:05:14.474 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:05:14.476 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:05:14.512 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2018-07-26 22:05:32.845 [http-nio-8080-exec-4] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:05:32.846 [http-nio-8080-exec-4] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:09:06.367 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15ff3e9e: startup date [Thu Jul 26 22:04:43 CST 2018]; root of context hierarchy
+2018-07-26 22:09:06.373 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:09:06.373 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:09:06.376 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:09:06.387 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:09:28.889 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99282 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:09:28.892 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:09:28.939 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:09:28 CST 2018]; root of context hierarchy
+2018-07-26 22:09:36.213 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da21f18d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:09:37.059 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:09:37.092 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:09:37.094 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:09:38.076 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:09:38.096 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:09:38.096 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9158 ms
+2018-07-26 22:09:38.871 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:09:38.873 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:09:38.874 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:09:38.879 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:09:38.912 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:09:38.914 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:09:38.914 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:09:40.654 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:09:42.137 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:09:42.171 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:09:42.305 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:09:42.308 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:09:42.311 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:09:42.665 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:09:42.723 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:09:42.849 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:09:43.752 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:09:44.275 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:09:28 CST 2018]; root of context hierarchy
+2018-07-26 22:09:44.285 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:09:44.366 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:09:44.367 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:09:44.368 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:09:44.369 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:09:44.370 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:09:44.371 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:09:44.374 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:09:44.375 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:09:44.375 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:09:44.376 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:09:44.377 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:09:44.378 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:09:44.379 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:09:44.379 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:09:44.385 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:09:44.385 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:09:44.413 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:09:44.413 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:09:44.413 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:09:44.436 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:09:44.436 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:09:45.063 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:09:45.065 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:09:45.071 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:09:45.120 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:09:45.131 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:09:45.167 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:09:45.203 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:09:45.210 [main] INFO  com.App - Started App in 31.756 seconds (JVM running for 37.59)
+2018-07-26 22:11:03.440 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:09:28 CST 2018]; root of context hierarchy
+2018-07-26 22:11:03.445 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:11:03.445 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:11:03.450 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:11:03.465 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:11:27.561 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99346 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:11:27.567 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:11:27.614 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:11:27 CST 2018]; root of context hierarchy
+2018-07-26 22:11:33.200 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$938a88d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:11:33.725 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:11:33.743 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:11:33.745 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:11:34.259 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:11:34.264 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:11:34.264 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6650 ms
+2018-07-26 22:11:34.736 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:11:34.738 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:11:34.739 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:11:34.740 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:11:34.744 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:11:34.744 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:11:34.745 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:11:35.954 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:11:37.370 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:11:37.389 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:11:37.503 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:11:37.506 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:11:37.509 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:11:37.855 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:11:37.934 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:11:38.111 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:11:39.443 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:11:39.784 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:11:27 CST 2018]; root of context hierarchy
+2018-07-26 22:11:39.798 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:11:39.915 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:11:39.918 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:11:39.919 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:11:39.920 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:11:39.921 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:11:39.922 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.TestController.index()
+2018-07-26 22:11:39.923 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:11:39.928 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:11:39.929 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:11:39.930 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:11:39.931 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:11:39.931 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:11:39.934 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:11:39.934 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:11:39.935 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:11:39.941 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:11:39.941 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:11:39.983 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:11:39.984 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:11:39.985 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:11:40.021 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:11:40.022 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:11:40.815 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:11:40.820 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:11:40.838 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:11:40.915 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:11:40.937 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:11:40.987 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:11:41.089 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:11:41.097 [main] INFO  com.App - Started App in 29.101 seconds (JVM running for 34.93)
+2018-07-26 22:11:43.504 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:11:43.504 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:11:43.527 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-07-26 22:11:57.459 [http-nio-8080-exec-4] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:11:57.462 [http-nio-8080-exec-4] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:13:11.394 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:11:27 CST 2018]; root of context hierarchy
+2018-07-26 22:13:11.400 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:13:11.400 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:13:11.406 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:13:11.415 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:13:34.844 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99411 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:13:34.846 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:13:34.890 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:13:34 CST 2018]; root of context hierarchy
+2018-07-26 22:13:39.956 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$938a88d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:13:40.504 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:13:40.521 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:13:40.523 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:13:41.266 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:13:41.272 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:13:41.272 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6382 ms
+2018-07-26 22:13:41.707 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:13:41.709 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:13:41.709 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:13:41.711 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:13:41.718 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:13:41.719 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:13:41.719 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:13:42.878 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:13:43.599 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:13:43.613 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:13:43.718 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:13:43.720 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:13:43.722 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:13:44.050 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:13:44.131 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:13:44.366 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:13:45.023 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:13:45.291 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:13:34 CST 2018]; root of context hierarchy
+2018-07-26 22:13:45.300 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:13:45.389 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:13:45.392 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:13:45.392 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:13:45.393 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:13:45.394 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:13:45.395 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.kfit.kzrs.controller.TestController.index()
+2018-07-26 22:13:45.396 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:13:45.400 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:13:45.400 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:13:45.400 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:13:45.401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:13:45.401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:13:45.402 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:13:45.403 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:13:45.403 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:13:45.408 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:13:45.408 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:13:45.434 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:13:45.435 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:13:45.435 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:13:45.456 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:13:45.456 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:13:45.812 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:13:45.814 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:13:45.822 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:13:45.896 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:13:46.101 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:13:46.124 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:13:46.158 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:13:46.164 [main] INFO  com.App - Started App in 26.772 seconds (JVM running for 32.574)
+2018-07-26 22:15:05.676 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:15:05.677 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:15:05.705 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-07-26 22:15:17.981 [http-nio-8080-exec-6] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:15:17.983 [http-nio-8080-exec-6] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:16:46.626 [http-nio-8080-exec-9] ERROR com.kfit.kzrs.controller.indexController - Test -> 记录error日志
+2018-07-26 22:16:46.626 [http-nio-8080-exec-9] INFO  com.kfit.kzrs.controller.indexController - Test -> 访问了index方法
+2018-07-26 22:20:08.524 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:13:34 CST 2018]; root of context hierarchy
+2018-07-26 22:20:08.532 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:20:08.533 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:20:08.540 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:20:08.555 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:20:32.939 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99597 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:20:32.941 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:20:32.986 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Thu Jul 26 22:20:32 CST 2018]; root of context hierarchy
+2018-07-26 22:20:38.035 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f453869f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:20:38.538 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:20:38.558 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:20:38.559 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:20:39.360 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:20:39.369 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:20:39.370 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6384 ms
+2018-07-26 22:20:39.797 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:20:39.798 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:20:39.799 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:20:39.800 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:20:39.804 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:20:39.804 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:20:39.805 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:20:40.747 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:20:42.027 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:20:42.041 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:20:42.137 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:20:42.139 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:20:42.141 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:20:42.464 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:20:42.538 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:20:42.784 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:20:43.580 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:20:43.882 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Thu Jul 26 22:20:32 CST 2018]; root of context hierarchy
+2018-07-26 22:20:43.891 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:20:43.982 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:20:43.985 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:20:43.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:20:43.987 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:20:43.988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:20:43.989 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.kfit.kzrs.controller.TestController.index()
+2018-07-26 22:20:43.990 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:20:43.994 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:20:43.994 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:20:43.994 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:20:43.996 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:20:43.996 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:20:43.997 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:20:43.998 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:20:43.998 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:20:44.003 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:20:44.003 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:20:44.031 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:20:44.031 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:20:44.031 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:20:44.053 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:20:44.053 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:20:44.500 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:20:44.507 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:20:44.513 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:20:44.804 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:20:44.814 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:20:44.843 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:20:44.879 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:20:44.884 [main] INFO  com.App - Started App in 27.345 seconds (JVM running for 33.263)
+2018-07-26 22:20:54.592 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:20:54.593 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:20:54.612 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-07-26 22:21:10.251 [http-nio-8080-exec-4] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:21:10.252 [http-nio-8080-exec-4] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:21:23.743 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Thu Jul 26 22:20:32 CST 2018]; root of context hierarchy
+2018-07-26 22:21:23.748 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:21:23.749 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:21:23.754 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:21:23.763 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:21:46.709 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99637 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:21:46.712 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:21:46.760 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Thu Jul 26 22:21:46 CST 2018]; root of context hierarchy
+2018-07-26 22:21:53.557 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f453869f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:21:54.418 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:21:54.439 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:21:54.442 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:21:55.494 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:21:55.504 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:21:55.505 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8745 ms
+2018-07-26 22:21:56.302 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:21:56.307 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:21:56.309 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:21:56.313 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:21:56.326 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:21:56.327 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:21:56.328 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:21:57.970 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:21:58.998 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:21:59.073 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:21:59.365 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:21:59.369 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:21:59.372 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:21:59.803 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:21:59.927 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:22:00.090 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:22:00.773 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:22:01.040 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Thu Jul 26 22:21:46 CST 2018]; root of context hierarchy
+2018-07-26 22:22:01.050 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:22:01.134 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:22:01.138 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:22:01.138 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:22:01.140 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:22:01.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:22:01.141 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.kfit.kzrs.controller.TestController.index()
+2018-07-26 22:22:01.142 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:22:01.146 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:22:01.147 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:22:01.147 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:22:01.148 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:22:01.149 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:22:01.150 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:22:01.151 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:22:01.151 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:22:01.162 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:22:01.163 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:22:01.195 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:22:01.195 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:22:01.195 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:22:01.220 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:22:01.220 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:22:01.807 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:22:01.809 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:22:01.816 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:22:01.863 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:22:01.873 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:22:01.901 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:22:01.938 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:22:01.944 [main] INFO  com.App - Started App in 30.673 seconds (JVM running for 36.548)
+2018-07-26 22:22:13.459 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:22:13.460 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:22:13.484 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-07-26 22:22:23.204 [http-nio-8080-exec-4] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:22:23.205 [http-nio-8080-exec-4] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:22:32.691 [http-nio-8080-exec-5] ERROR com.kfit.kzrs.controller.TestController - Test -> 记录error日志
+2018-07-26 22:22:32.691 [http-nio-8080-exec-5] INFO  com.kfit.kzrs.controller.TestController - Test -> 访问了index方法
+2018-07-26 22:26:22.564 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Thu Jul 26 22:21:46 CST 2018]; root of context hierarchy
+2018-07-26 22:26:22.569 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:26:22.570 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:26:22.573 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:26:22.587 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:26:45.127 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99782 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:26:45.129 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:26:45.195 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Thu Jul 26 22:26:45 CST 2018]; root of context hierarchy
+2018-07-26 22:26:50.297 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f453869f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:26:50.921 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:26:50.940 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:26:50.942 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:26:51.691 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:26:51.697 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:26:51.698 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6503 ms
+2018-07-26 22:26:52.119 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:26:52.121 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:26:52.122 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:26:52.122 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:26:52.126 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:26:52.126 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:26:52.126 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:26:53.288 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:26:54.278 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:26:54.299 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:26:54.434 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:26:54.435 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:26:54.436 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:26:54.705 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:26:54.755 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:26:54.924 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:26:55.573 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:26:55.879 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Thu Jul 26 22:26:45 CST 2018]; root of context hierarchy
+2018-07-26 22:26:55.891 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:26:55.965 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:26:55.967 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:26:55.968 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:26:55.969 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:26:55.969 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:26:55.970 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.kfit.kzrs.controller.TestController.index()
+2018-07-26 22:26:55.971 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:26:55.975 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:26:55.976 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:26:55.976 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:26:55.977 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:26:55.977 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:26:55.978 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:26:55.979 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:26:55.979 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:26:55.984 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:26:55.991 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:26:56.023 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:26:56.023 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:26:56.023 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:26:56.043 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:26:56.043 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:26:56.417 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:26:56.420 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:26:56.426 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:26:56.488 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:26:56.714 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:26:56.744 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:26:56.791 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:26:56.798 [main] INFO  com.App - Started App in 27.091 seconds (JVM running for 32.972)
+2018-07-26 22:27:16.405 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:27:16.406 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:27:16.424 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-07-26 22:27:26.337 [http-nio-8080-exec-4] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:27:26.337 [http-nio-8080-exec-4] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:27:48.349 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47af7f3d: startup date [Thu Jul 26 22:26:45 CST 2018]; root of context hierarchy
+2018-07-26 22:27:48.353 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:27:48.354 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:27:48.359 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:27:48.369 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:28:11.885 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99883 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:28:11.888 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:28:11.934 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bb9a3ff: startup date [Thu Jul 26 22:28:11 CST 2018]; root of context hierarchy
+2018-07-26 22:28:17.190 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27e553d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:28:17.735 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:28:17.754 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:28:17.755 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:28:18.626 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:28:18.632 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:28:18.633 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6699 ms
+2018-07-26 22:28:19.138 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:28:19.140 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:28:19.140 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:28:19.141 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:28:19.146 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:28:19.147 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:28:19.148 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:28:20.225 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:28:21.599 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:28:21.614 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:28:21.725 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:28:21.727 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:28:21.730 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:28:22.083 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:28:22.256 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:28:22.444 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:28:23.290 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:28:23.655 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bb9a3ff: startup date [Thu Jul 26 22:28:11 CST 2018]; root of context hierarchy
+2018-07-26 22:28:23.663 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:28:23.742 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:28:23.745 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:28:23.746 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:28:23.747 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:28:23.747 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:28:23.748 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.kfit.kzrs.controller.TestController.index()
+2018-07-26 22:28:23.749 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:28:23.754 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:28:23.755 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:28:23.755 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:28:23.756 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:28:23.757 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:28:23.759 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:28:23.759 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:28:23.759 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:28:23.766 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:28:23.767 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:28:23.794 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:28:23.794 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:28:23.794 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:28:23.818 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:28:23.819 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:28:24.209 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:28:24.211 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:28:24.229 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:28:24.526 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:28:24.539 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:28:24.569 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:28:24.605 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:28:24.611 [main] INFO  com.App - Started App in 28.298 seconds (JVM running for 34.969)
+2018-07-26 22:28:34.520 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:28:34.521 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:28:34.538 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-07-26 22:28:50.115 [http-nio-8080-exec-6] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:28:50.117 [http-nio-8080-exec-6] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:29:10.005 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3bb9a3ff: startup date [Thu Jul 26 22:28:11 CST 2018]; root of context hierarchy
+2018-07-26 22:29:10.010 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:29:10.010 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:29:10.014 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:29:10.024 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:29:34.343 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99934 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:29:34.345 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:29:34.392 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@661972b0: startup date [Thu Jul 26 22:29:34 CST 2018]; root of context hierarchy
+2018-07-26 22:29:40.320 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8e2e7c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:29:40.912 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:29:40.935 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:29:40.938 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:29:41.763 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:29:41.769 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:29:41.769 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7377 ms
+2018-07-26 22:29:42.323 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:29:42.325 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:29:42.325 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:29:42.326 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:29:42.333 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:29:42.335 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:29:42.336 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:29:43.865 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:29:45.532 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:29:45.547 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:29:45.644 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:29:45.646 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:29:45.648 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:29:45.917 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:29:45.965 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:29:46.080 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:29:46.970 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:29:47.280 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@661972b0: startup date [Thu Jul 26 22:29:34 CST 2018]; root of context hierarchy
+2018-07-26 22:29:47.289 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:29:47.374 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:29:47.377 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:29:47.377 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:29:47.379 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:29:47.379 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:29:47.380 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.kfit.kzrs.controller.TestController.index()
+2018-07-26 22:29:47.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:29:47.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:29:47.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:29:47.386 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:29:47.388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:29:47.388 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:29:47.390 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:29:47.391 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:29:47.392 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:29:47.399 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:29:47.400 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:29:47.428 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:29:47.428 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:29:47.428 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:29:47.454 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:29:47.455 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:29:48.011 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:29:48.013 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:29:48.020 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:29:48.070 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:29:48.083 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:29:48.115 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:29:48.164 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:29:48.172 [main] INFO  com.App - Started App in 29.514 seconds (JVM running for 35.587)
+2018-07-26 22:30:02.024 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:30:02.025 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:30:02.046 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-07-26 22:30:17.234 [http-nio-8080-exec-4] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:30:17.234 [http-nio-8080-exec-4] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:30:58.351 [http-nio-8080-exec-7] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:30:58.351 [http-nio-8080-exec-7] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:31:03.468 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@661972b0: startup date [Thu Jul 26 22:29:34 CST 2018]; root of context hierarchy
+2018-07-26 22:31:03.473 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:31:03.474 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:31:03.485 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:31:03.508 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:31:26.591 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 99997 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:31:26.599 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:31:26.648 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c729a55: startup date [Thu Jul 26 22:31:26 CST 2018]; root of context hierarchy
+2018-07-26 22:31:34.041 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67b30b79] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:31:34.737 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:31:34.773 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:31:34.775 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:31:35.852 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:31:35.860 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:31:35.860 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9212 ms
+2018-07-26 22:31:36.650 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:31:36.652 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:31:36.653 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:31:36.654 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:31:36.661 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:31:36.662 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:31:36.663 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:31:38.485 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:31:39.407 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:31:39.441 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:31:39.792 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:31:39.796 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:31:39.800 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:31:40.436 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:31:40.524 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:31:40.737 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:31:41.578 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:31:41.989 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c729a55: startup date [Thu Jul 26 22:31:26 CST 2018]; root of context hierarchy
+2018-07-26 22:31:42.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:31:42.202 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:31:42.205 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:31:42.206 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:31:42.207 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:31:42.208 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:31:42.208 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.kfit.kzrs.controller.TestController.index()
+2018-07-26 22:31:42.209 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:31:42.218 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:31:42.220 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:31:42.220 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:31:42.221 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:31:42.224 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:31:42.228 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:31:42.230 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:31:42.231 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:31:42.239 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:31:42.239 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:31:42.269 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:31:42.270 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:31:42.270 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:31:42.297 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:31:42.298 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:31:43.082 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:31:43.084 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:31:43.098 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:31:43.160 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:31:43.174 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:31:43.220 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:31:43.315 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:31:43.328 [main] INFO  com.App - Started App in 32.253 seconds (JVM running for 38.593)
+2018-07-26 22:31:58.832 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:31:58.832 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:31:58.848 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-07-26 22:32:11.387 [http-nio-8080-exec-6] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:32:11.388 [http-nio-8080-exec-6] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
+2018-07-26 22:32:54.853 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c729a55: startup date [Thu Jul 26 22:31:26 CST 2018]; root of context hierarchy
+2018-07-26 22:32:54.856 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-07-26 22:32:54.857 [Thread-2] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-07-26 22:32:54.861 [Thread-2] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:32:54.876 [Thread-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2018-07-26 22:33:17.915 [main] INFO  com.App - Starting App on zhourongshengdeMacBook-Pro.local with PID 192 (/Users/zjutK/Downloads/spring-boot-hello/target/classes started by zjutK in /Users/zjutK/Downloads/spring-boot-hello)
+2018-07-26 22:33:17.918 [main] INFO  com.App - No active profile set, falling back to default profiles: default
+2018-07-26 22:33:17.966 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:33:17 CST 2018]; root of context hierarchy
+2018-07-26 22:33:24.475 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$938a88d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-26 22:33:25.001 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2018-07-26 22:33:25.020 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2018-07-26 22:33:25.021 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-07-26 22:33:25.981 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-07-26 22:33:25.989 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-26 22:33:25.989 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8023 ms
+2018-07-26 22:33:26.624 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid2/*]
+2018-07-26 22:33:26.626 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-26 22:33:26.626 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.kzrs.servlet.TestServlet' to [/test2]
+2018-07-26 22:33:26.627 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'com.kfit.base.servlet.DruidStatViewServlet' to [/druid/*]
+2018-07-26 22:33:26.631 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-26 22:33:26.631 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-26 22:33:26.632 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-07-26 22:33:27.777 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-07-26 22:33:28.650 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-07-26 22:33:28.670 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-07-26 22:33:28.792 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.11.Final}
+2018-07-26 22:33:28.793 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-07-26 22:33:28.795 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2018-07-26 22:33:29.081 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2018-07-26 22:33:29.186 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2018-07-26 22:33:29.298 [main] INFO  o.h.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2018-07-26 22:33:29.998 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:33:30.269 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ce1e309: startup date [Thu Jul 26 22:33:17 CST 2018]; root of context hierarchy
+2018-07-26 22:33:30.278 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in fastJsonpResponseBodyAdvice
+2018-07-26 22:33:30.358 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.kfit.test.web.HelloController.Hello()
+2018-07-26 22:33:30.361 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getDemo]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.DemoController.getDemo()
+2018-07-26 22:33:30.362 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/zeroException]}" onto public int com.kfit.test.web.DemoController.zeroException()
+2018-07-26 22:33:30.363 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/save]}" onto public java.lang.String com.kfit.test.web.Demo2Controller.save()
+2018-07-26 22:33:30.363 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo2/getById]}" onto public com.kfit.test.bean.Demo com.kfit.test.web.Demo2Controller.getById(long)
+2018-07-26 22:33:30.364 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test]}" onto public java.lang.String com.kfit.kzrs.controller.TestController.index()
+2018-07-26 22:33:30.365 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login]}" onto public java.lang.String com.kfit.kzrs.controller.LoginController.login(com.kfit.kzrs.entity.UserEntity,javax.servlet.http.HttpServletRequest)
+2018-07-26 22:33:30.368 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.index()
+2018-07-26 22:33:30.369 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login_view],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.login_view()
+2018-07-26 22:33:30.369 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[GET]}" onto public java.lang.String com.kfit.kzrs.controller.indexController.upload()
+2018-07-26 22:33:30.370 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/uploads],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.uploads(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile[])
+2018-07-26 22:33:30.370 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/upload],methods=[POST]}" onto public java.lang.String com.kfit.kzrs.controller.UploadController.upload(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile)
+2018-07-26 22:33:30.372 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.delete(java.lang.Long)
+2018-07-26 22:33:30.372 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list],methods=[GET]}" onto public java.util.List<com.kfit.kzrs.entity.UserEntity> com.kfit.kzrs.controller.UserController.list()
+2018-07-26 22:33:30.373 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save],methods=[GET]}" onto public com.kfit.kzrs.entity.UserEntity com.kfit.kzrs.controller.UserController.save(com.kfit.kzrs.entity.UserEntity)
+2018-07-26 22:33:30.378 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-26 22:33:30.378 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-26 22:33:30.403 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/kzrs55/resource/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:33:30.403 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:33:30.403 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-26 22:33:30.421 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalDefaultExceptionHandler
+2018-07-26 22:33:30.422 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in fastJsonpResponseBodyAdvice
+2018-07-26 22:33:31.026 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-26 22:33:31.028 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-26 22:33:31.036 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2018-07-26 22:33:31.110 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:33:31.126 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2018-07-26 22:33:31.201 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-26 22:33:31.274 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2018-07-26 22:33:31.282 [main] INFO  com.App - Started App in 28.773 seconds (JVM running for 34.796)
+2018-07-26 22:33:34.828 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-26 22:33:34.828 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-26 22:33:34.845 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-07-26 22:33:49.528 [http-nio-8080-exec-6] ERROR com.kfit.kzrs.controller.indexController - 记录error日志
+2018-07-26 22:33:49.529 [http-nio-8080-exec-6] INFO  com.kfit.kzrs.controller.indexController - 访问了index方法
